@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theranda Furnitures - Mobilje Cilësore</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#28a745',secondary:'#f8f9fa'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-section {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.7) 100%), url('https://readdy.ai/api/search-image?query=modern%2520living%2520room%2520with%2520elegant%2520furniture%2C%2520minimalist%2520design%2C%2520bright%2520and%2520airy%2520space%2520with%2520large%2520windows%2C%2520green%2520plants%2C%2520wooden%2520floor%2C%2520white%2520walls%2C%2520comfortable%2520sofa%2C%2520coffee%2520table%2C%2520bookshelves%2C%2520high-quality%2520photograph&width=1200&height=600&seq=1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #28a745;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="text-primary text-3xl font-['Pacifico'] mr-2">Theranda</div>
+                    <span class="text-gray-700 font-medium">Furnitures</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary font-medium">Ballina</a>
+                    <a href="#categories" class="text-gray-700 hover:text-primary font-medium">Kategoritë</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary font-medium">Produktet</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium">Rreth Nesh</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium">Kontakti</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+                        <i class="ri-search-line ri-lg"></i>
+                    </div>
+                    <div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+                        <i class="ri-user-line ri-lg"></i>
+                    </div>
+                    <div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer relative">
+                        <i class="ri-shopping-cart-line ri-lg"></i>
+                        <span class="absolute top-0 right-0 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">3</span>
+                    </div>
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section w-full py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Mobilje Cilësore për Shtëpinë Tuaj</h1>
+                    <p class="text-lg text-gray-600 mb-8">Theranda Furnitures ju ofron koleksionet më të mira të mobiljeve për çdo hapësirë të shtëpisë suaj. Dizajne moderne, cilësi e lartë dhe çmime konkurruese.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-opacity-90 transition">Shiko Koleksionin</button>
+                        <button class="bg-white border border-gray-300 text-gray-700 px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-gray-50 transition">Kontakto Tani</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%2520modern%2520living%2520room%2520furniture%2520set%2520with%2520minimalist%2520design%2C%2520comfortable%2520sofa%2C%2520coffee%2520table%2C%2520side%2520tables%2C%2520green%2520plants%2C%2520clean%2520white%2520background%2C%2520professional%2520product%2520photography&width=600&height=400&seq=2&orientation=landscape" alt="Mobilje Moderne" class="w-full h-auto rounded-lg shadow-lg object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                        <i class="ri-truck-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dërgesa në Gjithë Kosovën</h3>
+                    <p class="text-gray-600">Dërgojmë produktet tona në çdo qytet të Kosovës brenda 3-5 ditëve të punës.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                        <i class="ri-shield-check-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Garanci 2 Vjeçare</h3>
+                    <p class="text-gray-600">Të gjitha produktet tona vijnë me garanci 2 vjeçare për cilësi dhe qëndrueshmëri.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+                        <i class="ri-tools-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Montim Falas</h3>
+                    <p class="text-gray-600">Ofrojmë shërbim montimi falas për të gjitha produktet e blera në dyqanin tonë.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Kategoritë Tona</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Zgjidhni nga koleksionet tona të ndryshme të mobiljeve për çdo hapësirë të shtëpisë suaj.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="category-card bg-white rounded-lg shadow-sm overflow-hidden transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520bedroom%2520with%2520elegant%2520bed%2C%2520nightstands%2C%2520wardrobe%2C%2520clean%2520design%2C%2520neutral%2520colors%2C%2520professional%2520furniture%2520photography%2C%2520high%2520quality%2520image&width=400&height=300&seq=3&orientation=landscape" alt="Dhoma Gjumi" class="w-full h-48 object-cover object-top">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Dhoma Gjumi</h3>
+                        <p class="text-gray-600 mb-4">Krevate, komodina, garderoba dhe më shumë për dhomën tuaj të gjumit.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Shiko më shumë
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card bg-white rounded-lg shadow-sm overflow-hidden transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520kitchen%2520with%2520elegant%2520cabinets%2C%2520island%2C%2520appliances%2C%2520clean%2520design%2C%2520white%2520and%2520wood%2520elements%2C%2520professional%2520furniture%2520photography%2C%2520high%2520quality%2520image&width=400&height=300&seq=4&orientation=landscape" alt="Kuzhina" class="w-full h-48 object-cover object-top">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Kuzhina</h3>
+                        <p class="text-gray-600 mb-4">Mobilje moderne kuzhinë, tavolina, karrige dhe aksesorë.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Shiko më shumë
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card bg-white rounded-lg shadow-sm overflow-hidden transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520living%2520room%2520with%2520elegant%2520sofa%2C%2520coffee%2520table%2C%2520TV%2520stand%2C%2520clean%2520design%2C%2520neutral%2520colors%2C%2520professional%2520furniture%2520photography%2C%2520high%2520quality%2520image&width=400&height=300&seq=5&orientation=landscape" alt="Dhoma Ndenjës" class="w-full h-48 object-cover object-top">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Dhoma e Ndenjës</h3>
+                        <p class="text-gray-600 mb-4">Divane, tavolina, komodina dhe mobilje për dhomën e ndenjës.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Shiko më shumë
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="category-card bg-white rounded-lg shadow-sm overflow-hidden transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520office%2520with%2520elegant%2520desk%2C%2520chair%2C%2520bookshelf%2C%2520clean%2520design%2C%2520neutral%2520colors%2C%2520professional%2520furniture%2520photography%2C%2520high%2520quality%2520image&width=400&height=300&seq=6&orientation=landscape" alt="Zyrë" class="w-full h-48 object-cover object-top">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Zyra</h3>
+                        <p class="text-gray-600 mb-4">Tavolina pune, karrige, rafte dhe mobilje për zyrën tuaj.</p>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            Shiko më shumë
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Produktet e Veçanta</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Zbuloni koleksionet tona më të fundit dhe më të popullarizuara.</p>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex bg-gray-100 p-1 rounded-full">
+                    <button class="px-6 py-2 rounded-full bg-primary text-white whitespace-nowrap">Të Gjitha</button>
+                    <button class="px-6 py-2 rounded-full text-gray-700 whitespace-nowrap">Dhoma Gjumi</button>
+                    <button class="px-6 py-2 rounded-full text-gray-700 whitespace-nowrap">Kuzhina</button>
+                    <button class="px-6 py-2 rounded-full text-gray-700 whitespace-nowrap">Dhoma e Ndenjës</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition duration-300 hover:shadow-md">
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%2520modern%2520sofa%2520with%2520clean%2520lines%2C%2520light%2520gray%2520fabric%2C%2520wooden%2520legs%2C%2520minimalist%2520design%2C%2520on%2520white%2520background%2C%2520professional%2520product%2520photography&width=400&height=300&seq=7&orientation=landscape" alt="Divan Modern" class="w-full h-56 object-cover object-top">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm px-2 py-1 rounded">E Re</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Divan Modern "Milano"</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(24 vlerësime)</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Divan modern me dizajn elegant dhe komod për dhomën tuaj të ndenjës.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-800">€649.99</span>
+                            <button class="bg-primary text-white p-2 rounded-full w-10 h-10 flex items-center justify-center !rounded-button whitespace-nowrap">
+                                <i class="ri-shopping-cart-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition duration-300 hover:shadow-md">
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=modern%2520dining%2520table%2520set%2520with%2520wooden%2520table%2520and%2520chairs%2C%2520minimalist%2520design%2C%2520on%2520white%2520background%2C%2520professional%2520product%2520photography&width=400&height=300&seq=8&orientation=landscape" alt="Set Tavolinë Ngrënie" class="w-full h-56 object-cover object-top">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white text-sm px-2 py-1 rounded">-15%</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Set Tavolinë Ngrënie "Venezia"</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(18 vlerësime)</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Set elegant tavolinë ngrënie me 6 karrige, perfekt për familjen tuaj.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-xl font-bold text-gray-800">€849.99</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">€999.99</span>
+                            </div>
+                            <button class="bg-primary text-white p-2 rounded-full w-10 h-10 flex items-center justify-center !rounded-button whitespace-nowrap">
+                                <i class="ri-shopping-cart-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition duration-300 hover:shadow-md">
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=modern%2520bed%2520frame%2520with%2520headboard%2C%2520wooden%2520elements%2C%2520minimalist%2520design%2C%2520on%2520white%2520background%2C%2520professional%2520product%2520photography&width=400&height=300&seq=9&orientation=landscape" alt="Krevat Modern" class="w-full h-56 object-cover object-top">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Krevat Modern "Napoli"</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(32 vlerësime)</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Krevat modern me kokë të lartë dhe dizajn elegant për dhomën tuaj të gjumit.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-800">€749.99</span>
+                            <button class="bg-primary text-white p-2 rounded-full w-10 h-10 flex items-center justify-center !rounded-button whitespace-nowrap">
+                                <i class="ri-shopping-cart-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition duration-300 hover:shadow-md">
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=modern%2520kitchen%2520cabinet%2520set%2C%2520white%2520and%2520wood%2520finish%2C%2520minimalist%2520design%2C%2520on%2520white%2520background%2C%2520professional%2520product%2520photography&width=400&height=300&seq=10&orientation=landscape" alt="Set Kuzhine" class="w-full h-56 object-cover object-top">
+                        <div class="absolute top-4 right-4 bg-primary text-white text-sm px-2 py-1 rounded">Bestseller</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2">Set Kuzhine "Modena"</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(47 vlerësime)</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Set modern kuzhine me dizajn funksional dhe estetik për shtëpinë tuaj.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gray-800">€1,299.99</span>
+                            <button class="bg-primary text-white p-2 rounded-full w-10 h-10 flex items-center justify-center !rounded-button whitespace-nowrap">
+                                <i class="ri-shopping-cart-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-white border border-primary text-primary px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-primary hover:text-white transition">Shiko të Gjitha Produktet</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520furniture%2520showroom%2520with%2520elegant%2520displays%2C%2520bright%2520space%2C%2520professional%2520interior%2520photography%2C%2520furniture%2520store%2520with%2520various%2520products%2520on%2520display%2C%2520high%2520quality%2520image&width=600&height=400&seq=11&orientation=landscape" alt="Theranda Showroom" class="w-full h-auto rounded-lg shadow-lg object-cover object-top">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Rreth Theranda Furnitures</h2>
+                    <p class="text-gray-600 mb-4">Theranda Furnitures është një kompani e specializuar në prodhimin dhe shitjen e mobiljeve cilësore që nga viti 2005. Me seli në Suharekë, Kosovë, ne kemi krijuar një reputacion të fortë për cilësi, dizajn dhe shërbim të shkëlqyer ndaj klientit.</p>
+                    <p class="text-gray-600 mb-6">Ne përdorim vetëm materialet më të mira dhe teknologjitë moderne të prodhimit për të krijuar mobilje që kombinojnë funksionalitetin, qëndrueshmërinë dhe estetikën. Çdo produkt i Theranda Furnitures është projektuar me kujdes për t'i përshtatur nevojave dhe stilit të klientëve tanë.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                <i class="ri-check-line ri-xl"></i>
+                            </div>
+                            <span class="text-gray-700">Cilësi e Lartë</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                <i class="ri-check-line ri-xl"></i>
+                            </div>
+                            <span class="text-gray-700">Dizajn Modern</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                <i class="ri-check-line ri-xl"></i>
+                            </div>
+                            <span class="text-gray-700">Çmime Konkurruese</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center text-primary mr-3">
+                                <i class="ri-check-line ri-xl"></i>
+                            </div>
+                            <span class="text-gray-700">Shërbim Profesional</span>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-opacity-90 transition">Mëso më Shumë</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Çfarë Thonë Klientët Tanë</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Dëgjoni përvojat e klientëve tanë të kënaqur me produktet dhe shërbimet e Theranda Furnitures.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Jam shumë i kënaqur me kuzhinën e re nga Theranda Furnitures. Cilësia është e shkëlqyer dhe dizajni është pikërisht ajo që kërkoja. Stafi ishte shumë ndihmues dhe profesional gjatë gjithë procesit."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line ri-lg text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Arben Krasniqi</h4>
+                            <p class="text-gray-500 text-sm">Prishtinë</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Theranda Furnitures ka mobiljet më cilësore që kam parë. Bleva një set të plotë për dhomën e ndenjës dhe jam shumë e kënaqur. Dërgesa ishte e shpejtë dhe montimi profesional. Do t'i rekomandoj me siguri!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line ri-lg text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Vjollca Berisha</h4>
+                            <p class="text-gray-500 text-sm">Gjakovë</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Krevati që bleva nga Theranda Furnitures është shumë komod dhe me cilësi të lartë. Çmimi ishte i arsyeshëm për cilësinë që mora. Shërbimi i klientit ishte i shkëlqyer dhe dërgesa ishte në kohë."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="ri-user-line ri-lg text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Driton Hoxha</h4>
+                            <p class="text-gray-500 text-sm">Pejë</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-primary bg-opacity-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Abonohu për Ofertat tona</h2>
+                <p class="text-gray-600 mb-8">Regjistrohuni për të marrë informacione mbi produktet e reja, zbritjet speciale dhe këshilla për dekorimin e shtëpisë.</p>
+                <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                    <input type="email" placeholder="Shkruani email-in tuaj" class="flex-grow px-4 py-3 rounded-lg border-none focus:ring-2 focus:ring-primary">
+                    <button class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-opacity-90 transition">Abonohu</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Na Kontaktoni</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Jemi këtu për t'ju ndihmuar me çdo pyetje apo kërkesë që keni. Mos hezitoni të na kontaktoni.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Emri</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-0">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-0">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 mb-2">Subjekti</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-0">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Mesazhi</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-0"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap hover:bg-opacity-90 transition">Dërgo Mesazhin</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <h3 class="text-xl font-semibold mb-6">Informacione Kontakti</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                    <i class="ri-map-pin-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Adresa</h4>
+                                    <p class="text-gray-600">Rruga Brigada 123, Suharekë, Kosovë</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                    <i class="ri-phone-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Telefoni</h4>
+                                    <p class="text-gray-600">+383 44 123 456</p>
+                                    <p class="text-gray-600">+383 49 789 012</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                    <i class="ri-mail-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <p class="text-gray-600">info@therandafurnitures.com</p>
+                                    <p class="text-gray-600">shitje@therandafurnitures.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                                    <i class="ri-time-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Orari i Punës</h4>
+                                    <p class="text-gray-600">E Hënë - E Premte: 09:00 - 19:00</p>
+                                    <p class="text-gray-600">E Shtunë: 09:00 - 16:00</p>
+                                    <p class="text-gray-600">E Diel: Mbyllur</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium mb-3">Na ndiqni</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-primary hover:text-white transition">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-primary hover:text-white transition">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-primary hover:text-white transition">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-primary hover:text-white transition">
+                                    <i class="ri-viber-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="h-96 relative">
+        <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('Location.png');"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-primary text-3xl font-['Pacifico'] mr-2">Theranda</div>
+                        <span class="text-white font-medium">Furnitures</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Mobilje cilësore për shtëpinë tuaj që nga viti 2005. Ne ofrojmë zgjidhje të personalizuara për çdo hapësirë të shtëpisë suaj.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Kategoritë</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dhoma Gjumi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kuzhina</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dhoma e Ndenjës</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Zyra</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Dhoma Fëmijësh</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mobilje Kopshti</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Informacione</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Rreth Nesh</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kontakti</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kushtet e Përdorimit</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Politika e Privatësisë</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Kontakti</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-400">Rruga Brigada 123, Suharekë, Kosovë</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="text-gray-400">+383 44 123 456</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-400">info@therandafurnitures.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <span class="text-gray-400">E Hënë - E Premte: 09:00 - 19:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 Theranda Furnitures. Të gjitha të drejtat e rezervuara.</p>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-400">Pagesa të sigurta me:</span>
+                        <div class="flex space-x-3">
+                            <i class="ri-visa-fill ri-lg text-gray-400"></i>
+                            <i class="ri-mastercard-fill ri-lg text-gray-400"></i>
+                            <i class="ri-paypal-fill ri-lg text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const menuButton = document.querySelector('button.md\\:hidden');
+            const mobileMenu = document.querySelector('nav.hidden');
+            
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function() {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.remove('hidden');
+                        mobileMenu.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'p-4', 'shadow-md', 'z-50', 'space-y-4');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'p-4', 'shadow-md', 'z-50', 'space-y-4');
+                    }
+                });
+            }
+
+            const tabButtons = document.querySelectorAll('.inline-flex.bg-gray-100 button');
+            
+            if (tabButtons.length > 0) {
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+
+                        tabButtons.forEach(btn => {
+                            btn.classList.remove('bg-primary', 'text-white');
+                            btn.classList.add('text-gray-700');
+                        });
+                        
+
+                        this.classList.add('bg-primary', 'text-white');
+                        this.classList.remove('text-gray-700');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
